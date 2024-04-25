@@ -34,7 +34,7 @@ const Table = (props: Props) => {
                       src='/x.svg'
                       height={20}
                       width={20}
-                      className='absolute top-1/2 -translate-y-1/2 right-0'
+                      className='absolute top-1/2 -translate-y-1/2 right-0 cursor-pointer'
                       alt='cross icon'
                     />
                   </td>
