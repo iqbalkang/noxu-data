@@ -67,7 +67,7 @@ const renderTableRow = () =>
     const cellClasses = 'py-2 px-4 capitalize';
 
     return (
-      <tr>
+      <tr key={index}>
         <td className={cellClasses}>{id}</td>
         <td className={cellClasses}>{name}</td>
         <td className={cellClasses}>{industry}</td>
@@ -90,5 +90,5 @@ const TableHeadingEl = ({ title, image }: TableHeading) => {
 
 const renderTableHeading = () =>
   tableHeadingsData.map((item, index) => {
-    return <TableHeadingEl image={item.image} title={item.title} />;
+    return <TableHeadingEl key={index} image={item.image} title={item.title} />;
   });
